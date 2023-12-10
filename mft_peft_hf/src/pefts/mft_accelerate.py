@@ -8,7 +8,10 @@ QLoRA + MFT entry
 """
 
 import gc
+
 import os
+os.environ['TRANSFORMERS_CACHE'] = '/datasets/Large_Language_Models'
+
 import sys
 import argparse
 import math
