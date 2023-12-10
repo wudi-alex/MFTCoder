@@ -27,7 +27,7 @@
     "num_warmup_steps": 300,
     "num_train_epochs": 8,
     "seed": 1234,
-    "seq_length": 4096,
+    "seq_length": 500,
     "resume_from_checkpoint": null,
     "log_interval": 10,
     "checkpointing_steps": 1000,
