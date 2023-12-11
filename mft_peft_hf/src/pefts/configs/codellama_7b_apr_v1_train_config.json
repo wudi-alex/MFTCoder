@@ -1,6 +1,6 @@
 {
     "load_raw_dataset": true,
-    "data_paths": "datasets/apr_v1.jsonl",
+    "data_paths": "[datasets/apr_v1.jsonl]",
     "output_dir": "outputs/",
     "tb_dir": "logs/",
     "pretrained_model_path": "codellama/CodeLlama-7b-hf",
