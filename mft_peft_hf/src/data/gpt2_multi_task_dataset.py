@@ -52,10 +52,10 @@ class GPT2FromRawDataset(torch.utils.data.Dataset):
 
             if self.weighted_loss_mode:
                 idx_data["weight"] = np.array([self.ds_weight], dtype=np.float32)
-                idx_data["task_id"] = np.array([self.task_id], dtype=np.int)
+                idx_data["task_id"] = np.array([self.task_id], dtype=int)
                 return idx_data
             else:
-                idx_data["task_id"] = np.array([self.task_id], dtype=np.int)
+                idx_data["task_id"] = np.array([self.task_id], dtype=int)
                 return idx_data
         except IndexError:
             new_idx = idx % len(self)
