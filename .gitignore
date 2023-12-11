@@ -161,6 +161,8 @@ cython_debug/
 .DS_Store
 
 *.csv
-data/
-log/
-output/
+*.jsonl
+
+**/outputs/
+**/datasets/
+**/logs/

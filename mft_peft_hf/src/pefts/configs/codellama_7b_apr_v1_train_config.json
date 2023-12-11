@@ -1,8 +1,8 @@
 {
     "load_raw_dataset": true,
-    "data_paths": "../../../../data/apr_v1.jsonl",
-    "output_dir": "../../../../outputs/",
-    "tb_dir": "../../../../logs",
+    "data_paths": "datasets/apr_v1.jsonl",
+    "output_dir": "outputs/",
+    "tb_dir": "logs/",
     "pretrained_model_path": "codellama/CodeLlama-7b-hf",
     "vocab_file": "codellama/CodeLlama-7b-hf",
     "low_cpu_mem_usage": true,
