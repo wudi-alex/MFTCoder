@@ -19,7 +19,9 @@ sys.path.append("..")
 from transformers import AutoModelForCausalLM, AutoTokenizer, AutoModel
 from peft import LoraConfig, get_peft_model
 from peft import PeftModel
-from model_mapping import MODEL_SPECIAL_TOKENS
+
+
+# from model_mapping import MODEL_SPECIAL_TOKENS
 
 
 def main():
@@ -58,8 +60,10 @@ def main():
     print(base_model)
 
     # DEAL with eos_token_id and pad_token_id
-    eos_token = MODEL_SPECIAL_TOKENS[config['model_type']]['eos_token']
-    pad_token = MODEL_SPECIAL_TOKENS[config['model_type']]['pad_token']
+    # eos_token = MODEL_SPECIAL_TOKENS[config['model_type']]['eos_token']
+    # pad_token = MODEL_SPECIAL_TOKENS[config['model_type']]['pad_token']
+    eos_token = '</s>'
+    pad_token = '<unk>'
     base_model.config.eos_token = eos_token
     base_model.config.pad_token = pad_token
     base_model.config.eos_token_id = tokenizer.convert_tokens_to_ids(eos_token)
